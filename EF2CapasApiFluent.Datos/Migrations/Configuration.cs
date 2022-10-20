@@ -1,0 +1,23 @@
+﻿namespace EF2CapasApiFluent.Datos.Migrations
+{
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<EF2CapasApiFluent.Datos.Data.DBFacturacionContext>
+    {
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = false;
+        }
+
+        protected override void Seed(EF2CapasApiFluent.Datos.Data.DBFacturacionContext context)
+        {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //  to avoid creating duplicate seed data.
+        }
+    }
+}
